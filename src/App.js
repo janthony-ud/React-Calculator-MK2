@@ -4,14 +4,11 @@ import './App.css';
 import React, {Component} from 'react'
 import Keypad from './components/Keypad.js'
 import Result from './/components/Result.js'
-import
 
 class App extends Component {
   constructor() {
     super();
-    this.state = {
-      result: ""
-    }
+    this.state = {result: ""}
   }
   
   render() {
@@ -19,13 +16,15 @@ class App extends Component {
       <div>
           <div className="calculator-body">
               <h1>Calculator</h1>
-              <ResultComponent result={this.state.result}/>
-              <KeyPadComponent onClick={this.onClick}/>
+              <Result result={this.state.result}/>
+              <Keypad onClick={this.onClick}/>
           </div>
       </div>
   );
   }
 }
+
+/*
 function App() {
   return (
     <div className="App">
@@ -46,4 +45,5 @@ function App() {
     </div>
   );
 }
+*/
 export default App;
