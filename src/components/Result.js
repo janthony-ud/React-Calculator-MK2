@@ -5,7 +5,6 @@ class Result extends Component {
         let {result} = this.props;
         return (
             <div>
-                
                 <p>{result}</p>
             </div>
         );
